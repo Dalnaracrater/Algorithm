@@ -63,7 +63,6 @@ vector<int> dijk(int a) {
 	int visited[1001] = { 0, };
 	vector<int> dist(n+1, INF);
 
-	queue<int> q;
 	priority_queue<pii> pq;
 
     // 시작 점 설정, cost 0
