@@ -32,7 +32,7 @@ int dfs(int x, int y){
         int b = y + dy[i];
         
         if (0 <= a && a < SIZE && 0 <= b && b < SIZE) {
-            // 
+            // dp의 값을 4방향에서 역으로 조사
             if (forest[x][y] < forest[a][b]){
                 int temp = dfs(a, b) + 1;
                 max = max > temp ? max : temp;
